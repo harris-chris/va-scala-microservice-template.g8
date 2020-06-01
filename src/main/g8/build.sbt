@@ -18,5 +18,4 @@ libraryDependencies := Seq(
 
 enablePlugins(DockerPlugin, JavaAppPackaging, DockerComposePlugin)
 
-packageName in Docker := "$dockerName"
-
+packageName in Docker := "$dockerName$"
