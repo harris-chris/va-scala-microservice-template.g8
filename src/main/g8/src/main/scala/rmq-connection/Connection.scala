@@ -1,4 +1,4 @@
-
+package com.visualalpha.service
 
 import com.newmotion.akka.rabbitmq._
 
