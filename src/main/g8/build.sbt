@@ -14,8 +14,12 @@ lazy val root = (project in file("."))
 
 libraryDependencies := Seq(
   "com.newmotion" %% "akka-rabbitmq" % "5.1.2",
+  "com.typesafe.akka" %% "akka-actor" % "2.6.5",
 )
+
+trapExit := false
 
 enablePlugins(DockerPlugin, JavaAppPackaging, DockerComposePlugin)
 
 packageName in Docker := "$dockerName$"
+version in Docker := "latest"
